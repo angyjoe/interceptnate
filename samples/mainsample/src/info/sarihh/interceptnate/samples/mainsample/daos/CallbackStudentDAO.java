@@ -4,6 +4,7 @@ import info.sarihh.interceptnate.CallbackInterceptor;
 import info.sarihh.interceptnate.TransactionCallback;
 import info.sarihh.interceptnate.samples.mainsample.beans.Student;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -30,6 +31,20 @@ public class CallbackStudentDAO {
 				Student student = (Student) CallbackInterceptor.getSession()
 						.get(Student.class, studentID);
 				CallbackInterceptor.getSession().delete(student);
+				return student;
+			}
+		});
+	}
+
+	/** update the birth date of the Student identified by studentID */
+	public Student updateStudent(final Integer studentID, final Date birthDate) {
+		return CallbackInterceptor.inTransaction(new TransactionCallback() {
+			@Override
+			public Student doInTransaction() {
+				Student student = (Student) CallbackInterceptor.getSession()
+						.get(Student.class, studentID);
+				student.setBirthDate(birthDate);
+				CallbackInterceptor.getSession().update(student);
 				return student;
 			}
 		});

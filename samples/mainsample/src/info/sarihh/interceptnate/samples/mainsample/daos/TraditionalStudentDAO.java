@@ -4,6 +4,7 @@ import info.sarihh.interceptnate.TraditionalInterceptor;
 import info.sarihh.interceptnate.samples.mainsample.beans.Student;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.hibernate.HibernateException;
@@ -45,6 +46,29 @@ public class TraditionalStudentDAO {
 			transaction = session.beginTransaction();
 			student = (Student) session.get(Student.class, studentID);
 			session.delete(student);
+			transaction.commit();
+		} catch (HibernateException e) {
+			if (transaction != null) {
+				transaction.rollback();
+			}
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+		return student;
+	}
+
+	/** update the birth date of the Student identified by studentID */
+	public Student updateStudent(Integer studentID, Date birthDate) {
+		Session session = TraditionalInterceptor.getSessionFactory()
+				.openSession();
+		Transaction transaction = null;
+		Student student = null;
+		try {
+			transaction = session.beginTransaction();
+			student = (Student) session.get(Student.class, studentID);
+			student.setBirthDate(birthDate);
+			session.update(student);
 			transaction.commit();
 		} catch (HibernateException e) {
 			if (transaction != null) {
