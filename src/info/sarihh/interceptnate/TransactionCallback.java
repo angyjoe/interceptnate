@@ -1,7 +1,5 @@
 package info.sarihh.interceptnate;
 
-import java.util.List;
-
 /**
  * @author Sari Haj Hussein
  */
