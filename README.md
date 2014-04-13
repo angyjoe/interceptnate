@@ -20,6 +20,7 @@ try {
 } finally {
 	session.close();
 }
+```
 
 With InterceptNate, it's sufficient to only write this:
 
@@ -30,6 +31,7 @@ return CallbackInterceptor.inTransaction(new TransactionCallback() {
 		// return session.get, session.save, session.delete, session.update, session.createQuery or session.createSQLQuery
 	}
 });
+```
 
 ## Ingredients
 InterceptNate uses the following software components:
