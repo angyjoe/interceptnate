@@ -11,7 +11,8 @@ Session session = TraditionalInterceptor.getSessionFactory().openSession();
 Transaction transaction = null;
 try {
 	transaction = session.beginTransaction();
-	// session.get, session.save, session.delete, session.update, session.createQuery or session.createSQLQuery
+	// session.get, session.save, session.delete, session.update,
+	// session.createQuery.list() or session.createSQLQuery.list()
 	transaction.commit();
 } catch (HibernateException e) {
 	if (transaction != null)
@@ -28,7 +29,8 @@ With InterceptNate, it's sufficient to only write this:
 return CallbackInterceptor.inTransaction(new TransactionCallback() {
 	@Override
 	public T doInTransaction() {
-		// return session.get, session.save, session.delete, session.update, session.createQuery or session.createSQLQuery
+		// return session.get, session.save, session.delete, session.update,
+		// session.createQuery.list() or session.createSQLQuery.list()
 	}
 });
 ```
