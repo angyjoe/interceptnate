@@ -47,6 +47,10 @@ InterceptNate uses the following software components:
 ## Deployment
 Refer to the [main sample application](./samples/mainsample).
 
+## Q&A
+
+Post your questions to the [InterceptNate mailing list](https://lists.sourceforge.net/lists/listinfo/interceptnate-list).
+
 ## Licence
 Copyright &copy; 2013 **[Sari Haj Hussein](http://sarihh.info)**.
 
