@@ -53,6 +53,16 @@ InterceptNate isn't hosted on [Maven Central Repository](http://search.maven.org
 mvn install:install-file -Dfile=InterceptNate-0.1.jar -Dpackaging=jar -DgroupId=info.sarihh -DartifactId=InterceptNate-0.1 -Dversion=0.1
 ```
 
+And then insert the following dependecny in your POM:
+
+```
+<dependency>
+	<groupId>info.sarihh</groupId>
+	<artifactId>InterceptNate-0.1</artifactId>
+	<version>0.1</version>
+</dependency>
+```
+
 ## Q&A
 
 Post your questions to [InterceptNate mailing list](https://lists.sourceforge.net/lists/listinfo/interceptnate-list).
