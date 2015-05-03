@@ -47,9 +47,9 @@ Refer to the [InterceptNateSample application](./InterceptNateSample).
 
 ## Maven
 
-InterceptNate isn't hosted on [Maven Central Repository]()http://search.maven.org). To use InterceptNate in your project, you need to install [InterceptNate-0.1.jar](./target/InterceptNate-0.1.jar) into your local Maven repository using the command:
+InterceptNate isn't hosted on [Maven Central Repository](http://search.maven.org). To use InterceptNate in your project, you need to install [InterceptNate-0.1.jar](./target/InterceptNate-0.1.jar) into your local Maven repository using the command:
 
-```java
+```
 mvn install:install-file -Dfile=InterceptNate-0.1.jar -Dpackaging=jar -DgroupId=info.sarihh -DartifactId=InterceptNate-0.1 -Dversion=0.1
 ```
 
