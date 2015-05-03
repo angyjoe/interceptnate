@@ -42,6 +42,8 @@ InterceptNate uses the following software components:
 
 2. Hibernate 4.3.9
 
+3. HSQLDB 2.3.2 (for InterceptNateSample)
+
 ## Usage
 Refer to the [InterceptNateSample application](./InterceptNateSample).
 
