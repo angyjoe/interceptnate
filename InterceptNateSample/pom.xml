@@ -31,8 +31,8 @@
 			<artifactId>hsqldb</artifactId>
 			<version>2.3.2</version>
 		</dependency>
-		<!-- You need to download and install the InterceptNate dependency into 
-			your local Maven repository using the command: mvn install:install-file -Dfile=InterceptNate-0.1.jar 
+		<!-- You need to install the InterceptNate dependency into your local Maven 
+			repository using the command: mvn install:install-file -Dfile=InterceptNate-0.1.jar 
 			-Dpackaging=jar -DgroupId=info.sarihh -DartifactId=InterceptNate-0.1 -Dversion=0.1 -->
 		<dependency>
 			<groupId>info.sarihh</groupId>
