@@ -55,7 +55,7 @@ mvn install:install-file -Dfile=InterceptNate-0.1.jar -Dpackaging=jar -DgroupId=
 
 And then insert the following dependecny in your POM:
 
-```
+```XML
 <dependency>
 	<groupId>info.sarihh</groupId>
 	<artifactId>InterceptNate-0.1</artifactId>
