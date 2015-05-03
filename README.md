@@ -40,16 +40,22 @@ InterceptNate uses the following software components:
 
 1. JDK 1.8.0
 
-2. Hibernate 4.3.1
+2. Hibernate 4.3.9
 
-3. P6Spy (optional for displaying Hibernate SQL parameter values)
+## Usage
+Refer to the [InterceptNateSample application](./InterceptNateSample).
 
-## Deployment
-Refer to the [main sample application](./samples/mainsample).
+## Maven
+
+InterceptNate isn't hosted on [Maven Central Repository]()http://search.maven.org). To use InterceptNate in your project, you need to install [InterceptNate-0.1.jar](./target/InterceptNate-0.1.jar) into your local Maven repository using the command:
+
+```java
+mvn install:install-file -Dfile=InterceptNate-0.1.jar -Dpackaging=jar -DgroupId=info.sarihh -DartifactId=InterceptNate-0.1 -Dversion=0.1
+```
 
 ## Q&A
 
-Post your questions to the [InterceptNate mailing list](https://lists.sourceforge.net/lists/listinfo/interceptnate-list).
+Post your questions to [InterceptNate mailing list](https://lists.sourceforge.net/lists/listinfo/interceptnate-list).
 
 ## Licence
 Copyright &copy; 2013 **[Sari Haj Hussein](http://sarihh.info)**.
