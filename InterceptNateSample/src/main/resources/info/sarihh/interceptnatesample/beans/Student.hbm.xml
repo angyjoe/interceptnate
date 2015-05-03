@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2014 7:07:33 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="info.sarihh.interceptnatesample.beans.Student"
+		table="Student">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="native" />
+		</id>
+		<property generated="never" name="firstName" type="java.lang.String">
+			<column name="firstName" />
+		</property>
+		<property generated="never" name="lastName" type="java.lang.String">
+			<column name="lastName" />
+		</property>
+		<property generated="never" name="birthDate" type="java.util.Date">
+			<column name="birthDate" />
+		</property>
+	</class>
+</hibernate-mapping>
