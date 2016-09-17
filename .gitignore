@@ -1,4 +1,4 @@
-# *.jar
+*.jar
 *.war
 *.ear
 *.class
@@ -8,5 +8,5 @@
 bin/
 dist/
 log/
-# target/
+target/
 .settings/
