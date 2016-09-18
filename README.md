@@ -49,10 +49,10 @@ Refer to the [InterceptNateSample application](./InterceptNateSample).
 
 ## Maven
 
-InterceptNate isn't hosted on [Maven Central Repository](http://search.maven.org). To use InterceptNate in your project, you need to install [InterceptNate-0.1.jar](./target/InterceptNate-0.1.jar) into your local Maven repository using the command:
+InterceptNate isn't hosted on [Maven Central Repository](http://search.maven.org). To use InterceptNate in your project, you need to install InterceptNate-0.1.jar into your local Maven repository using the command:
 
 ```
-mvn install:install-file -Dfile=InterceptNate-0.1.jar -Dpackaging=jar -DgroupId=info.sarihh -DartifactId=InterceptNate-0.1 -Dversion=0.1
+mvn install:install-file -Dfile=InterceptNate-0.1.jar -Dpackaging=jar -DgroupId=info.sarihh -DartifactId=InterceptNate -Dversion=0.1
 ```
 
 And then insert the following dependecny in your POM:
@@ -60,7 +60,7 @@ And then insert the following dependecny in your POM:
 ```XML
 <dependency>
 	<groupId>info.sarihh</groupId>
-	<artifactId>InterceptNate-0.1</artifactId>
+	<artifactId>InterceptNate</artifactId>
 	<version>0.1</version>
 </dependency>
 ```
