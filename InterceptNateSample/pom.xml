@@ -114,7 +114,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.5.0</version>
         <configuration>
-          <mainClass>com.volvocars.kafka.eight.utils.App</mainClass>
+          <mainClass></mainClass>
           <systemProperties>
             <systemProperty>
               <key>java.util.logging.SimpleFormatter.format</key>
